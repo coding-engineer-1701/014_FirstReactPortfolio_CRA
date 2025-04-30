@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './Header.module.css';
 
 // TODO - create a header that changes after login
 
 function Header() {
     return (
-        <header>
+        <header className={styles.header}>
             <div>
-                <p class="welcome-message">jammming</p>
+                <p className={styles["welcome-message"]}>jammming</p>
             </div>
         </header>
     )
