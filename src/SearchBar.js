@@ -8,7 +8,12 @@ function SearchBar(props) {
     }
 
     const handleSubmit = (e) => {
-        e.prevent
+        e.preventDefault();
+
+        try {
+            const response = await searchSpotify(searchText);
+        }
+        
     }
 
     return (
